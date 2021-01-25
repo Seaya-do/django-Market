@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+
+  <div class="jumbotron">
+  <h1 class="display-3">"{{ email }}"<h3>님 로그인 되셨습니다.</h3></h1>
+  <p class="lead">SC쇼핑몰에 오신 것을 환영합니다.</p>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'productList' %}" role="button">
+        물품보기</a>
+  </p>
+</div>
+
+
+
+
+{% endblock %}
